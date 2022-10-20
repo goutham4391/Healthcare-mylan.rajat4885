@@ -1,0 +1,3112 @@
+
+/* ============ MISC IN-BETWEEN STATES - to support components that break at certain widths due to being designed without any consideration for responsivity ============== */
+@media screen and (max-width: 1120px) {
+    #career_iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .tabs > .tab > h3 > a {
+        /*TODO - these values may need some adjustment. Also, DH version seems to have numerous breakpoints.*/
+        padding: 18px 12px 20px 12px;
+    }
+
+    .committees-list .right .left .file-size {
+        font-size: 11px;
+    }
+
+    .sitemap-page a {
+        font-size: 11px;
+    }
+
+    ul.product-list li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .rail .icon-list h4 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:681px) and (max-width: 940px) {
+
+    /*GLOBAL RULES for IN-BETWEEN typography!!!*/
+
+    .container-with-rail > .grid > .col.right .caption,
+    .container-with-rail > .grid > .col.right .caption p,
+    .container-with-rail > .grid > .col.right .caption a,
+    .rail .icon-list .caption,
+    .rail .icon-list .caption p,
+    .rail .icon-list .caption a {
+        font-size: 11px;
+    }
+
+    /*4/17/2015 new rail option for narrow content (to accomodate background image) 
+        exception to 11px rule (based on current site) */
+    .container-with-rail > .grid > .col.right .rail.narrow-content .caption,
+    .container-with-rail > .grid > .col.right .rail.narrow-content .caption p,
+    .container-with-rail > .grid > .col.right .rail.narrow-content .caption a {
+        font-size: 14px;
+    }
+
+    /*rx products page - mylan.com - shrink link text to help fit long text */
+    .accordion.type-c .handle > .inner .link a {
+        font-size: 11px;
+        display: block;
+        line-height: 1.2;
+    }
+
+    /*pdf list when on rail*/
+    .container-with-rail > .grid > .col.right .pdf-list .right,
+    .container-with-rail > .grid > .col.right .pdf-list .right a {
+        font-size: 11px;
+    }
+
+    /*news summary list when on rail*/
+    .container-with-rail > .grid > .col.right .news-summary-list p,
+    .container-with-rail > .grid > .col.right .news-summary-list a {
+        font-size: 11px;
+    }
+
+    /* ---- HACKS ---- */
+    /*'Contact global communications cta' needs to behave differently from normal content
+        (not componentized - class manually entered in content). Mylan.com news landing page*/
+    h2.contact-global-communications-cta {
+        font-size: 13px;
+    }
+    /*hack for ipad mini - button is too wide for the rail*/
+    .btn.contact-global-communications-cta {
+        left: -5px!important;
+        width: 100%;
+    }
+
+    .btn.contact-global-communications-cta > a {
+        padding-right: 0;
+    }
+
+    .btn.icon-btn.contact-global-communications-cta .icon {
+        /*left: 6px;*/
+    }
+
+    .btn.contact-global-communications-cta > a span {
+        word-wrap: break-word;
+        display: block;
+    }
+
+    .large-media-callout > .right .caption,
+    .large-media-callout > .right .caption p {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 892px) {
+    /*only if it's in the main content column of a container with rail */
+    .container-with-rail > .grid > .left .callout > .right {
+        padding-left: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .fact-sheet .button > .btn-v2 > a > span {
+        font-size: 10px;
+    }
+
+    .fact-sheet .button > .btn-v2 > a > span:after {
+        top: 1px;
+    }
+
+    .plus-resources-hero > .inner > .caption, .plus-resources-hero > .inner > .caption,
+    .plus-resources-hero > .inner > .caption, .plus-resources-hero > .inner > .caption p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .feature-slide .right {
+        padding: 20px 20px 0 40px;
+        margin-left: 45%;
+    }
+}
+
+/* ============== MAIN MOBILE BREAKPOINT =============== */
+@media screen and (max-width: 680px) {
+    /* 680px is the MAIN breakpoint used on mylan.com.
+	 The design *requires* this breakpoint to be at 680, so that value should not be changed. */
+
+    /*======== BEGIN GLOBAL HTML RULES ========*/
+
+    /*lookout...  new defaults*/
+    div, p, h1, h2, h3, h4, h5, a, li {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    /*======== END GLOBAL HTML RULES ========*/
+
+    /* ======== BEGIN GRID FRAMEWORK ======== */
+    .col {
+        width: 100%;
+        float: none;
+    }
+    /* ======== END GRID FRAMEWORK ======== */
+
+    /* =================== BEGIN BASE SHARED STYLES =================== */
+    /* ---- captions ---- */
+    .caption {
+        padding-bottom: 20px;
+    }
+
+    .caption, .caption p, .caption li, .caption small, .caption small p {
+        font-size: 12px;
+    }
+
+    .caption ul {
+        /*MOBILE STANDARD*/
+        margin-left: 20px;
+    }
+
+    .caption h2 {
+        font-size: 15px;
+    }
+
+    /* ---- buttons ---- */
+    .btn > a {
+        padding: 6px 10px;
+    }
+    /* ---- icon links ---- */
+    .icon-link.arrow-blue-lg span:after {
+        bottom: 2px;
+    }
+
+    .icon-link.arrow-blue-med span:after {
+        /*icon gets smaller in mobile*/
+        height: 8px;
+        width: 5px;
+        background-position: 0px -34px;
+        background-size: 13px;
+        right: -10px;
+    }
+
+    /* Optiont to force custom HR to go straight to the edges in mobile view. Currently only used in publicfilingssummary (mylan.com rebuild) - not yet added to custom-hr component.*/
+    .custom-hr.to-edge-in-mobile {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    /* =================== END BASE SHARED STYLES =================== */
+
+    /* =================== BEGIN GLOBAL LAYOUT STYLES =================== */
+    .container-with-rail .col-1of4 {
+        width: 100%;
+    }
+
+    .container-with-rail .col-3of4 {
+        width: 100%;
+    }
+
+    .container-with-rail > .grid > .left {
+        margin-bottom: 30px;
+    }
+
+    .container-with-rail > .grid > .left > .inner {
+        padding-right: 0;
+    }
+    /*remember how the rail container layout deviates from the grid? So we need to write more extra rules...*/
+    .container-with-rail .col-2of3, .container-with-rail .col-1of3 {
+        width: 100%;
+    }
+
+    .padded-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-wrap {
+        margin-top: -5px !important /*overrides inline styles set by js*/;
+    }
+
+    .pad-40 { /*TODO: deprecated! (but make sure it's no longer in use before removing).*/
+        padding: 0 15px;
+    }
+
+    .pad-main {
+        /*previously "pad-40" ALSO DEPRECATED*/
+        padding: 30px 15px 40px 15px;
+    }
+
+    .flyoff {
+        padding-right: 0;
+    }
+
+    .rail.extra-margin {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    /*4/17/2015 new rail option for narrow content (to accomodate background image) */
+    .rail.narrow-content > .inner {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .rail.narrow-content .content-section .caption {
+        max-width: none;
+    }
+
+    /* =================== END GLOBAL LAYOUT STYLES =================== */
+
+    /* =================== BEGIN GLOBAL COMPONENTS (common to all pages) =================== */
+    /* ---- cookie warning ---- */
+    .cookie-warning {
+        position: relative;
+        top: 0 !important /*overrides inline styles set by js*/;
+    }
+
+    .cookie-warning h1 {
+        font-size: 14px;
+    }
+
+    .cookie-warning .close {
+        font-size: 12px;
+        right: 7px;
+    }
+
+    .cookie-warning .close > span:after {
+        display: none;
+    }
+
+    /*cookie warning adjustments 11/3/2014
+	 11/13 - THIS WILL NOT WORK - GO BACK!!!
+	 .main-wrap > .grid > .col.col-1of4 {
+	 position: relative;
+	 /*this was done so that the cookie warning height can be expandable in mobile - it will push the nav button down. (nav button prevously was absolute positioned based on top of page). */
+    /* the above does not work on the HOME PAGE...only subpages ... so I had to modify the JS to continually update the .nav-module offset as the cookie warning height changes
+	 }
+
+	 .cookie-warning {
+	 height: auto;
+	 }
+
+	 .cookie-warning h1 {
+	 height: auto;
+	 padding-right: 70px;
+	 }
+
+	 .cookie-warning .scrollable {
+	 height: auto;
+	 }*/
+
+    /* ---- header bar ---- */
+    section.header {
+        /*height: 90px;*/
+        background: #ffffff;
+        /* position: relative; */
+        border-bottom: 4px solid #f0f0f0;
+    }
+
+    .header-menu:before {
+        display: none;
+    }
+
+    .header .logo {
+        height: 60px;
+    }
+
+    .header .logo img {
+        margin-left: 14px;
+        height: 100%;
+    }
+
+    .header > .grid {
+        /*padding-top: 15px;*/
+    }
+
+    .header-divider {
+        background: none;
+    }
+
+    /* begin language selector */
+    .language-select-module {
+        left: auto;
+        right: 67px;
+        width: 70px;
+        height: 35px;
+        color: #666;
+        background: #efefef;
+        background: linear-gradient(to bottom,#fff 0%,#efefef 100%);
+        border-radius: 3px;
+        box-shadow: 0 2px 6px rgba(0,0,0,.4);
+    }
+
+    .language-select-module .flag {
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        top: 10px;
+        left: 16px;
+    }
+
+    .language-select-module .lang {
+        position: relative;
+        left: 38px;
+        top: 9px;
+        color: #666666;
+        font-size: 12px;
+    }
+
+    .language-select-module .lang:after, .language-flyout .tab .lang:after {
+        display: none;
+    }
+
+    .language-flyout {
+        position: absolute;
+    }
+
+    .language-flyout .overlay {
+        position: fixed;
+    }
+
+    .language-flyout .col-3of4 {
+        padding-top: 49px;
+    }
+
+    .language-flyout .pane {
+        position: static;
+        width: auto;
+        padding: 0 15px;
+        background: none;
+        box-shadow: none;
+    }
+
+    .language-flyout .pane > .inner {
+        position: static;
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+        padding-top: 20px;
+        background: #fafafa;
+    }
+
+    .language-flyout .pane > .inner > p {
+        font-size: 12px;
+        padding-left: 16px;
+    }
+
+    .language-flyout .pane .title {
+        background: #FAFAFA;
+        border-radius: 5px 5px 0 0;
+        padding-top: 16px;
+    }
+
+    .language-flyout .flyout.grid {
+        position: absolute;
+        top: 0;
+    }
+
+    .language-flyout .tab {
+        left: auto;
+        right: 67px;
+        width: 70px;
+        height: 50px;
+        color: #666;
+        background: #FAFAFA;
+        border-radius: 3px 3px 0 0;
+        top: -1px;
+    }
+
+    .language-flyout .tab .flag {
+        height: 16px;
+        left: 16px;
+        top: 10px;
+        width: 16px;
+    }
+
+    .language-flyout .tab .lang {
+        font-size: 12px;
+        left: 38px;
+        top: 9px;
+    }
+
+    .language-flyout .pane .title > .logo {
+        position: absolute;
+        top: 64px;
+        left: 30px;
+        margin: 0;
+    }
+
+    .language-flyout .pane .title {
+        /*height: 41px;*/
+        border-bottom: 5px solid #F0F0F0;
+        padding-right: 105px;
+        padding-left: 55px;
+    }
+
+    .language-flyout .pane .title > h1 {
+        font-size: 18px;
+        vertical-align: top;
+        display: inline;
+        margin-left: 0;
+        padding-right: 15px;
+    }
+
+    .language-flyout .close {
+        position: absolute;
+        right: -26px;
+        top: 37px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .language-flyout .close > span:after {
+        top: -4px;
+        right: -34px;
+    }
+
+    .country-list .country-name {
+        font-size: 12px;
+        width: auto;
+        padding-top: 5px;
+        vertical-align: top;
+        min-height: initial;
+    }
+
+    .country-list img {
+        height: 20px;
+        width: 16px;
+    }
+
+    .country-list > li > h2 {
+        display: block;
+        font-size: 15px;
+        padding-top: 0;
+        padding-bottom: 16px;
+    }
+
+    .country-list > li {
+        padding-left: 16px;
+        padding-top: 18px;
+        border-bottom: 1px solid #e4e4e4;
+    }
+
+    .country-list > li > ol {
+        display: block;
+    }
+
+    .country-list > li > ol > li {
+        padding-bottom: 14px;
+        clear: both;
+    }
+
+    .country-list > li > ol > li > ol {
+        float: right;
+        padding-bottom: 10px;
+        clear: both;
+    }
+
+    .country-list > li > ol > li > ol > li {
+        display: block;
+        text-align: right;
+    }
+
+    .country-list > li > ol > li > ol > li > a {
+        min-height: initial;
+        font-size: 12px;
+    }
+
+    .country-list > li > ol > li > ol {
+        display: block;
+    }
+
+    .other-locations > .inner {
+        padding-left: 16px;
+    }
+
+    .other-locations > .inner > .col-1of2 {
+        width: 50%;
+        float: left;
+    }
+
+    .other-locations > .inner > .col-1of2 > ol > li > img {
+        height: 20px;
+        width: 16px;
+    }
+
+    .other-locations > p {
+        padding-left: 16px;
+        font-size: 12px;
+    }
+
+    .other-locations ol > li {
+        min-height: 30px;
+    }
+
+    .other-locations ol > li > span {
+        font-size: 12px;
+        padding-top: 4px;
+    }
+    /*end language selector */
+
+    .header .logo.col.col-1of4 {
+        width: 25%;
+        float: left;
+    }
+
+    /*.header .header-menu.col.col-3of4 {
+        width: 75%;
+        float: left;
+    }*/
+    /*---- END HEADER ----*/
+
+    /*---- NAVIGATION ----*/
+    /*.nav-module, .home .nav-module {
+        height: 35px;
+        width: 40px;
+        position: absolute;
+        right: 13px;
+        top: 15px;
+        overflow: hidden;
+        background: #f7f7f7;
+    }*/
+
+    .nav-module .search-module {
+        width: 210px;
+        margin: 15px auto;
+    }
+
+    .nav-module .search-module .search input.placeholder-text {
+        font-size: 8px;
+    }
+
+    .mobileState .nav-module {
+        /*z-index: 7;*/
+    }
+
+    .mobileNavIsActive .nav-module {
+        /*.mobileNavActive class is applied to <body> by JS when mobile nav is activated by user*/
+        height: auto;
+        width: 260px;
+        right: auto;
+        left: -260px;
+        top: -94px;
+        overflow: auto;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 6px 0px;
+    }
+
+    .cookieWarningActive.mobileState .nav-module {
+        /*if cookie warning is active AND mobilestate is true, offset the nav module.
+		 ( the camelBacked classes above are set by javascript and applied to <body> ) */
+        top: 190px; /*THIS IS A FUNCTION OF COOKIE-WARNING HEIGHT*/
+    }
+
+    .mobileNavIsActive.cookieWarningActive.mobileState .nav-module {
+        top: -90px;
+    }
+
+    .home.cookieWarningActive .nav-module {
+        top: 15px;
+    }
+
+    .home.mobileNavIsActive.cookieWarningActive.mobileState .nav-module {
+        top: 0;
+    }
+
+    /*home page override, because nav is not inside .main-wrap on home page*/
+    .home.mobileNavIsActive .nav-module {
+        left: 0;
+        top: 0;
+    }
+
+    .mobileNavIsActive .main-wrap, .mobileNavIsActive .global-footer {
+        /*shift everything to the right*/
+        left: 260px;
+        position: relative;
+    }
+
+    .mobileNavIsActive .language-select-module {
+        display: none;
+    }
+
+    /*mobile nav has reversed colors*/
+    /*.nav-activator.lvl-2.active > .nav-link, .nav-list.lvl-2 > li > a > .nav-link, .nav-list.lvl-3 > li > a > .nav-link {
+        color: #666;
+    }*/
+
+    .nav-activator.lvl-2.active > .nav-link {
+        padding-right: 5px;
+    }
+
+    /*mobile nav does not highlight current page*/
+    .nav-list.lvl-2.active > li > a.current {
+        background: none;
+    }
+
+    .nav-activator.lvl-2.current:after {
+        display: none;
+    }
+
+    /*mobile nav toggle*/
+    .mobile-nav-toggle {
+        height: 35px;
+        width: 38px;
+        cursor: pointer;
+        background: #474747;
+        background: linear-gradient(to bottom,#474747 0%,#1f1f1f 100%);
+        border-radius: 3px;
+        display: block;
+    }
+
+    .mobile-nav-toggle > span {
+        display: block;
+        padding-top: 19px;
+        font-size: 10px;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        color: #6a6a6a;
+    }
+
+    .mobile-nav-toggle:hover > span {
+        text-decoration: underline;
+    }
+
+    .mobile-nav-toggle img {
+        width: 18px;
+        height: 10px;
+        position: absolute;
+        top: 9px;
+        left: 10px;
+    }
+
+    /*this is for when the mobile nav is active and JS has moved the mobile-nav-toggle into the header*/
+    .header .mobile-nav-toggle {
+        /*position: absolute;
+        right: 15px;*/
+        display: none;
+    }
+
+    /*more navigation styles*/
+    .nav-list > li > a:hover {
+        text-decoration: underline;
+    }
+
+    .nav-toggle, nav.nav:after, .nav-activator.lvl-2:before, .nav-list.lvl-1:after, .plus-resources.current > a:after, .nav-list.lvl-2.active > li > a.current:after, .nav-list.lvl-3.active > li > a.current:after {
+        display: none;
+    }
+
+    .nav-list > li > a, .nav-list.lvl-2 > li > a, .nav-list.lvl-3 > li > a, .nav-activator.lvl-2.active {
+        /*background: none;*/
+        /*border: none;*/
+        color: #666;
+    }
+
+    /*add some top/bottom padding to each section, to make it look more normal*/
+    .nav-activator.lvl-2 > .nav-link {
+        /*padding-top: 20px; instead of 12*/
+    }
+
+    .nav-list.lvl-2 {
+        padding-bottom: 10px;
+    }
+    /*and if it has no child pages, pad the bottom of the activator*/
+    .nav-activator.lvl-2.no-child {
+        padding-bottom: 20px;
+    }
+
+    .nav-list.lvl-2.active > li.red, .nav-list.lvl-2.active > li.purple, .nav-list.lvl-2.active > li.green, .nav-list.lvl-2.active > li.orange {
+        border-left: none;
+    }
+
+    /*.nav-list.lvl-1 > li > a > .nav-link, .nav-list.lvl-2 > li > a > .nav-link, .nav-list.lvl-3 > li > a > .nav-link {
+        padding-left: 15px;
+    }*/
+
+    /*.nav-list.lvl-3 > li > a > .nav-link {
+        padding-left: 25px;
+    }*/
+
+    /*.nav-list.lvl-2 > li > a:hover, .nav-list.lvl-3 > li > a:hover, .nav-list > li > a:hover, .plus-resources .nav-list.lvl-2.active > li > a:hover, .plus-resources .nav-list.lvl-2.active > li > a.current, .nav-list.lvl-3.active > li > a.current {
+        background: #f7f7f7;
+    }*/
+
+    /*.nav-activator.lvl-2 {
+        font-size: 15px;
+        font-weight: bold;
+    }*/
+
+    .nav-activator.lvl-2:before, .plus-resources:before {
+        content: " ";
+        display: block;
+        height: 3px;
+        border-top: 1px solid #d7d7d7;
+        border-bottom: 1px solid #fff;
+        background-color: #f0f0f0;
+    }
+
+    .nav-activator.no-child .nav-link {
+        margin-left: 0;
+    }
+
+    .plus-resources {
+        padding-top: 0;
+        background: none;
+        /* also have to unset filter for IE, you do it like this: */
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    }
+
+    .plus-resources .nav-list.lvl-2 {
+        /*PR links are always displayed in mobile nav regardless of what page you're on*/
+        display: block;
+    }
+
+    .plus-resources > a {
+        /*this is the logo*/
+        border-bottom: 1px solid #D2D2D2;
+        /*have to accomodate extra text height...*/
+        height: 62px;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        background: #f7f7f7; /* Old browsers */
+        background: -moz-linear-gradient(top, #f7f7f7 0%, #eaeaea 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #f7f7f7 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #f7f7f7 0%,#eaeaea 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #f7f7f7 0%,#eaeaea 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #f7f7f7 0%,#eaeaea 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+    }
+
+    .plus-resources > a > img {
+        width: 220px;
+        height: auto;
+        position: relative;
+        left: -20px;
+        top: -10px;
+    }
+
+    .plus-resources ul li a {
+        /*these are the sub links - they don't ever appear on desktop*/
+        display: block;
+        height: 30px;
+        font-size: 13px;
+        color: #666;
+    }
+
+    .plus-resources.active, .plus-resources.active:hover {
+        background: none;
+    }
+
+    .plus-resources .extra-text, .plus-resources.active .extra-text {
+        top: -44px;
+        padding-left: 96px;
+        line-height: 1.0;
+        padding-right: 5px;
+        color: #00bce6;
+    }
+
+    .plus-resources.active .normal {
+        display: block;
+    }
+
+    .plus-resources.active .inverted {
+        display: none;
+    }
+
+    .nav-list.lvl-2 > li > a:hover { /*TODO not sure */
+        background-color: none;
+    }
+
+    /*.nav .lvl-1, .nav .lvl-2, .home .nav-list.lvl-1 {
+        display: block;
+    }*/
+
+    /*"menu" link doesn't appear in mobile nav*/
+    .nav-activator.lvl-1, .home .nav-activator.lvl-1 {
+        /*display: none;*/
+    }
+    /*OVERRIDES the ABOVE - TODO: remove overridden rules*/
+    /*
+	 .nav-module, .cookieWarningActive.mobileState .nav-module {
+	 /*due to cookie warning adjustments 11/3/2014 - nav module position is now relative to its parent column, not the page
+	 top: -74px;
+	 }
+	 */
+
+    /* ---- END NAVIGATION ---- */
+
+    /* ---- GLOBAL FOOTER ---- */
+    .global-footer {
+        margin-top: 40px;
+    }
+
+    .global-footer > .grid > .col-1of4 {
+        max-width: none;
+    }
+
+    .global-footer > .grid > .col-1of4 > .pad-0-20 {
+        padding: 0 20px;
+    }
+
+    .global-footer .footer-rail {
+        max-width: none;
+        margin-bottom: 20px;
+    }
+
+    .global-footer .footer-rail .caption {
+        padding-bottom: 0;
+    }
+
+    .global-footer .legal {
+        padding: 0 20px;
+        max-width: none;
+    }
+
+    .global-footer .legal p {
+        font-size: 12px;
+    }
+
+    .global-footer .legal .logo {
+        float: right;
+        width: 100%;
+        height: auto;
+    }
+
+    .global-footer .legal .right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .global-footer .legal .links li {
+        padding-right: 18px;
+    }
+
+    .global-footer .legal .links li + li {
+        padding-left: 0px;
+        border: 0;
+    }
+
+    .global-footer .legal .links a {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .global-footer .sitemap-block li > a, .sitemap-block > a > span {
+        font-size: 12px;
+    }
+
+    .global-footer .sitemap-block {
+        max-width: none;
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+    .global-footer .sitemap-block > ul {
+        padding-bottom: 20px;
+    }
+
+    .global-footer .sitemap-block > ul > li {
+        padding-bottom: 6px;
+    }
+
+    /* global footer pt 2 */
+    .global-footer > .grid > .col-3of4 > .inner {
+        margin-right: 0;
+        padding: 0 20px;
+    }
+
+    .global-footer > .grid > .col-3of4 > .inner > .border {
+        width: 100%;
+        padding-left: 60px;
+        max-width: none;
+        height: 15px;
+    }
+
+    .global-footer .legal .logo {
+        margin-bottom: 45px;
+        margin-top: 4px;
+    }
+
+    .global-footer .footer-rail .inner ul li p {
+        padding-left: 5px;
+    }
+
+    .global-footer .footer-rail .inner ul li h2 {
+        padding-left: 5px;
+    }
+
+    .global-footer .sitemap-block ul {
+        padding-left: 0;
+    }
+
+    .global-footer .legal .links li + li {
+        padding-left: 0px;
+        border-left-color: rgb(102, 102, 102);
+        border: 0;
+    }
+
+    .global-footer .legal .links a {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .global-footer .social-bar {
+        display: none;
+    }
+
+    /* ---- END GLOBAL FOOTER ---- */
+    /* ============== END GLOBAL COMPONENTS =============== */
+
+    /* ============== BEGIN INDIVIDUAL COMPONENTS ============== */
+    /* ---- page headline ---- */
+    .page-headline {
+        padding-bottom: 12px;
+    }
+
+    .page-headline h1 {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+
+    .page-headline h2 {
+        font-size: 15px;
+        margin-top: -8px;
+        padding-bottom: 6px;
+    }
+
+    .page-headline .divider {
+        background-color: #fff;
+        height: 1px;
+        border-top: 1px solid #d7d7d7;
+    }
+
+    .page-headline .divider.red + .divider, .page-headline .divider.green + .divider, .page-headline .divider.purple + .divider, .page-headline .divider.orange + .divider {
+        display: none;
+    }
+
+    .page-headline .divider.red, .page-headline .divider.green, .page-headline .divider.purple, .page-headline .divider.orange {
+        height: 3px;
+    }
+
+    /* ---- sub-headline ---- */
+    .sub-headline .divider {
+        margin: 6px 0px 16px 0px;
+        position: relative;
+    }
+
+    .sub-headline h2 {
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+    .sub-headline .opt-link {
+        margin-top: -16px;
+    }
+
+    .sub-headline.has-opt-link {
+        /*because sub-headline h2 is now floated when opt link is present, so it's not taking up any space*/
+        margin-top: 20px;
+    }
+
+    /*RAIL*/
+    .rail {
+        margin-left: -15px;
+    }
+
+    .rail > .inner,
+    .rail.extra-margin > .inner {
+        /*background: #f2f2f2; nonstandard */
+        margin-right: -30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .rail.grey > .inner {
+        padding: 20px 15px 20px 15px;
+    }
+
+    .rail .opt-bkd-img,
+    .rail.has-stripes .opt-stripes {
+        display: none;
+    }
+
+    .rail .caption {
+        padding-right: 0;
+    }
+
+    .rail .sub-headline.has-divider {
+        padding-right: 15px;
+    }
+
+    .rail.has-stripes.flyoff {
+        /*TEMP disabled to match Quality page. May cause mismatches elsewhere. 
+            margin-bottom: 20px; */
+    }
+
+    .rail.has-stripes.grey > .inner {
+        /*stripes create additional 20px on bottom, so we don't need the pad in desktop, but in mobile, the stripes disappear, so we have to put it back*/
+        padding-bottom: 20px;
+    }
+
+    .rail.grey > .inner,
+    .rail.flyoff.grey.extra-margin > .inner {
+        background: #f2f2f2;
+    }
+
+    /* See mylan.com - random fact rail on Plus Resources landing page */
+    .rail.has-stripes.blue.flyoff.grey {
+        background: none;
+    }
+
+    .rail.has-stripes.blue.flyoff.grey > .inner {
+        background: #f2f2f2;
+    }
+
+    /*4/17/2015 new container-with-rail wider-rail option */
+    .container-with-rail.wider-rail > .grid > .col.col-2of3.left {
+        width: 100%;
+    }
+
+    .container-with-rail.wider-rail > .grid > .left > .inner {
+        padding-right: 0;
+    }
+
+    .container-with-rail.wider-rail > .grid > .col.col-1of3.right {
+        width: 100%;
+    }
+
+    .container-with-rail.wider-rail > .grid > .col.col-1of3.right .rail.grey > .inner {
+        padding-left: 15px;
+    }
+
+    .container-with-rail.wider-rail > .grid > .col.col-1of3.right .rail.has-stripes .opt-stripes {
+        display: block!important;
+        bottom: 0;
+    }
+
+    /*4/22/2015 new rail option to override normal background image behavior (prevents background image from disappearing in mobile) */
+    .rail.mobile-bkd .opt-bkd-img {
+        display: block;
+        z-index: 1;
+    }
+
+    .rail.mobile-bkd > .inner {
+        min-height: 195px;
+    }
+
+    /* ---- callouts ---- */
+    .callout {
+        margin-bottom: 20px;
+    }
+
+    .callout .left {
+        max-width: 200px;
+        width: auto;
+    }
+
+    .callout h3, .callout h3 > a, .callout h3 > a > span {
+        font-size: 15px;
+    }
+
+    .callout .left {
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .callout .right {
+        padding-left: 0 !important;
+    }
+
+    .callout .inner {
+        padding-left: 0;
+        padding-right: 0 !important;
+    }
+
+    .callout .left > img {
+        max-width: 100%;
+    }
+
+    .callout .right > .inner {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    /*callout h3 carat switches to medium size in mobile*/
+    .callout h3 .icon-link.arrow-blue-lg span:after {
+        height: 10px;
+        width: 6px;
+        background-position: 0 -37px;
+        right: -11px;
+        bottom: 2px;
+    }
+
+    /* ---- large icons list, previously called "generics list" ---- */
+    .large-icon-list > li {
+        padding: 25px 20px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .large-icon-list > li > .left {
+        width: 110px;
+    }
+
+    .large-icon-list > li > .right {
+        margin-left: 120px;
+    }
+
+    .large-icon-list .sub-headline h2 {
+        font-size: 12px;
+    }
+
+    /* ---- related items list ---- */
+    .related-items-list > .grid > .col.right > .inner {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .related-items-list > .grid > .col.left > .inner {
+        padding-right: 0;
+    }
+
+    .related-items-list .divider {
+        padding-left: 0;
+        margin-bottom: 10px;
+        background-color: #fff;
+        height: 1px;
+        width: auto;
+    }
+
+    .related-items-list .sub-headline {
+        padding-top: 20px;
+    }
+
+    .related-items-list .sub-headline h2 {
+        font-size: 12px;
+    }
+
+
+    /* ---- content with right image ---- */
+    .content-with-right-image .right {
+        padding: 0;
+    }
+
+    .content-with-right-image .right img {
+        max-width: 421px;
+        margin-bottom: 20px;
+    }
+
+    .content-with-right-image .left {
+        padding-bottom: 20px;
+    }
+
+    .content-with-right-image .caption {
+        padding-bottom: 0;
+    }
+
+    .content-with-right-image .caption ul li {
+        /*LI_EXCEPTION*/
+        padding-bottom: 0;
+        line-height: 120%;
+    }
+
+    /* ---- icon list ---- */
+    .icon-list {
+        /*what's this for?*/
+        width: auto;
+    }
+
+    .icon-list h4 {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+
+    .icon-list > .inner > ul > li {
+        padding-left: 0;
+    }
+
+    .rail .icon-list .icon {
+        top: -5px;
+    }
+
+    .rail.extra-margin .icon-list > .inner {
+        padding-left: 54px;
+    }
+
+    .container-full .icon-list,
+    .container-with-rail > .grid > .left .icon-list {
+        margin-left: -15px;
+    }
+
+    .container-full .icon-list > .inner,
+    .container-with-rail > .grid > .left .icon-list > .inner {
+        padding: 26px 15px 20px 86px;
+        margin-right: -30px;
+        background: #f2f2f2;
+    }
+
+    .rail .icon-list h4 {
+        font-size: 12px;
+    }
+
+    .rail .icon-list .caption,
+    .rail .icon-list .caption p {
+        font-size: 12px;
+    }
+
+    .container-with-rail > .grid > .left .icon-list:after {
+        display: none;
+    }
+
+    /* ---- pagination ---- */
+    .pagination {
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        padding-top: 30px;
+        padding-bottom: 16px;
+        margin: 20px 0 30px 0;
+    }
+
+    .pagination .page {
+        padding-top: 12px;
+        width: 18px;
+        text-align: left;
+    }
+
+    .pagination .page a,
+    .pagination .page.current a {
+        font-size: 11px;
+    }
+
+    .pagination .prev,
+    .pagination .prev.disabled {
+        float: left;
+        height: 40px;
+        width: 43px;
+        background-size: 43px;
+        background-position: 0 -184px;
+        background-repeat: no-repeat;
+        margin-right: 0;
+    }
+
+    .pagination .prev.disabled {
+        background-position: 0 -224px;
+    }
+
+    .pagination .next,
+    .pagination .next.disabled {
+        float: right;
+        height: 40px;
+        width: 43px;
+        background-size: 43px;
+        background-position: 0 -105px;
+        background-repeat: no-repeat;
+        margin-left: 0;
+    }
+
+    .pagination .next.disabled {
+        background-position: 0 -145px;
+    }
+
+    .pagination .page.current a, .pagination .page.current a:visited {
+        color: #666;
+    }
+
+    .pagination .page a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    /* ---- career callout ---- */
+    .career-callout {
+        padding-top: 0;
+    }
+
+    .career-callout > .inner {
+        padding-left: 0px;
+    }
+
+    .career-callout .left {
+        display: none;
+    }
+
+    .career-callout .center > .inner, .career-callout .right > .inner {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2px;
+    }
+
+
+    .career-callout .title {
+        font-size: 19px;
+    }
+
+    .career-callout .caption {
+        font-size: 12px;
+    }
+    /*HACK*/
+    .career-callout .title span {
+        font-size: 19px !important; /*overrides inline styles placed in error*/
+    }
+
+    /*HACK*/
+    .career-callout .caption span {
+        font-size: 12px !important; /*overrides inline styles placed in error*/
+    }
+
+    .career-callout .global-offer, .career-callout .position-teaser, .career-callout .position-link {
+        font-size: 12px;
+    }
+
+    .career-callout .global-offer strong, .career-callout .position-teaser strong {
+        color: #000;
+    }
+
+    .career-callout .caption {
+        margin-bottom: 15px;
+    }
+
+    .career-callout .col.center > .inner > .btn span {
+        font-size: 12px;
+    }
+
+    .career-callout .col.center > .inner > .btn,
+    .career-callout .btn {
+        width: 180px;
+        box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    }
+
+    .career-callout .btn > a {
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    .career-callout .careers-country-redirect .selectricOuter {
+        max-width: none;
+    }
+
+    /* ---- tabs ---- */
+    .tabs > .tab {
+        display: block;
+    }
+
+    .tabs > .tab > h3 {
+        width: 100%;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .tabs > .tab > h3 > a {
+        padding: 15px 0;
+        font-size: 15px;
+        color: #535761;
+    }
+
+    .tabs > .tab.active h3, .tabs > .tab:hover h3 {
+        background-color: #383838;
+        border: none;
+    }
+
+    .tabs > .tab.active > h3 > a, .tabs > .tab:hover > h3 > a {
+        color: #fff;
+    }
+
+    .tabs > .tab + .tab {
+        margin-top: 20px;
+    }
+
+    /* ---- filters ---- */
+    .filters label, .filters > span, .filters > ul > li > span {
+        font-size: 12px;
+    }
+
+    .filters > ul {
+        margin-left: 30px;
+    }
+
+    .filters > ul > li {
+        margin-right: 18px;
+        display: block;
+    }
+
+    .filters > ul > li + li {
+        margin-top: 15px;
+    }
+
+    .public-filings .filters > ul {
+        margin-left: 0;
+    }
+
+    .public-filings .filters > ul > li > span {
+        margin-right: 40px;
+    }
+
+    .public-filings .filters .selectricOuter {
+        width: 180px;
+    }
+
+    .public-filings .pagination {
+        border: none;
+    }
+
+    /* ---- feature story page ---- */
+    .feature-story {
+        padding-top: 5px;
+    }
+
+    .feature-story .thumb, .feature-story .desc {
+        display: block;
+        width: 100%;
+    }
+
+    .feature-story .desc {
+        padding: 3px 0 0 0;
+    }
+
+    .feature-story .thumb {
+        position: relative;
+        top: 0px;
+    }
+
+    .feature-story .thumb img {
+        width: 100%;
+        height: auto;
+    }
+
+    .feature-story .thumb img.thumb-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .feature-story .desc h3 {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+
+    .feature-story .desc h3 a {
+        font-size: 12px;
+    }
+
+    .feature-story .caption h2 {
+        font-size: 15px;
+    }
+
+    /*I don't know how or why, but feature stories pages now have the class "featured-story" - this may be a mistake but it is too risky to update all of these styles ("feature-story" may still be in use on other sites) 
+        ...so we will just add duplicate styles as needed. */
+    .featured-story .caption,
+    .featured-story .caption p,
+    .featured-story .caption a,
+    .featured-story .caption p a {
+        font-size: 12px;
+    }
+
+    .featured-story .caption h2 {
+        font-size: 15px;
+    }
+
+
+    /*feature stories list page*/
+    .feature-stories .filters label, .feature-stories .filters > span {
+        vertical-align: top;
+    }
+
+    .feature-stories .filters > span {
+        padding-right: 0;
+    }
+
+    .feature-stories .filters > ul {
+        margin-left: 0;
+    }
+
+    .feature-stories .filters > ul > li {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 12px;
+    }
+
+    .feature-stories .filters > ul > li + li {
+        margin-top: 0;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    /* ---- press releases page ---- */
+    .press-releases .sorting-bar {
+        display: none;
+    }
+
+    .press-releases-list {
+        border-top: 1px solid #e2e2e2;
+    }
+
+    .press-release-list-item {
+        padding-top: 15px;
+    }
+
+    .press-release-list-item .left {
+        display: none;
+    }
+
+    .press-release-list-item .right {
+        padding: 0;
+    }
+
+    .press-release-list-item .topics {
+        padding-top: 0;
+    }
+
+    .press-releases-list .title, .press-releases-list .title a, .press-release-list-item .topics, .press-release-list-item .date.mobileOnly, .press-release-list-item .topics > a > span {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .press-release-list-item .topics {
+        padding-bottom: 0;
+    }
+
+    .press-release-list-item .date.mobileOnly {
+        padding-top: 2px;
+    }
+
+    .press-releases .filters {
+        padding-bottom: 2px;
+    }
+
+    .press-releases .filters > span {
+        font-weight: normal;
+    }
+
+    .press-releases .filters > ul > li {
+        margin-bottom: 16px;
+        display: block;
+    }
+
+    .press-releases .pagination {
+        border: none;
+    }
+
+    /*press release print icon*/
+    .press-release .print-icon {
+        display: none;
+    }
+
+    .press-release .page-headline {
+        padding-top: 25px;
+    }
+
+    /* ---- selectric (custom selects) ---- */
+    .selectricItems li {
+        font-size: 12px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    /* ---- careers hero ---- */
+    .Career_Hero {
+        margin-bottom: 20px;
+        background: url('../../../-/media/gwmp/images/ui/bg_map_mobile.png') center center no-repeat;
+        background-size: 320px;
+    }
+
+    .Career_Hero > .inner {
+        margin: 0;
+        padding: 30px 15px 15px 15px;
+        background: #09b0d7;
+        background-color: rgba(9,176,215,.8);
+        min-height: initial;
+    }
+
+    .Career_Hero .bkd_img, .Career_Hero .career_img {
+        display: none;
+    }
+
+    .Career_Hero .hero_title {
+        padding-top: 20px;
+        font-size: 15px;
+        display: inline-block;
+        padding-right: 4px;
+    }
+
+    .Career_Hero .hero_title, .Career_Hero .hero_caption {
+        height: auto;
+        width: auto;
+        margin-bottom: 6px;
+        display: inline;
+    }
+
+    .Career_Hero .hero_caption {
+        font-size: 14px;
+        margin-top: 0;
+        line-height: 1.2;
+    }
+
+    .Career_Hero .hero_teaser {
+        width: auto;
+        font-size: 12px;
+    }
+
+    /*new version contains "countryRedirect.cshtml" (country selector) */
+    .careers-country-redirect.custom-inputs {
+        padding: 0 2px;
+    }
+
+    .careers-country-redirect .selectricOuter {
+        width: 100%;
+        margin: 20px 0 10px 0;
+    }
+
+    /* ---- contact page ---- */
+    .contact-tabs .tabs {
+        height: auto;
+        border: none;
+    }
+
+    .contact-tabs .tabs .tab {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .contact-tabs .tabs .tab span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .contact-tabs .tabs .tab.active, .contact-tabs .tabs .tab:hover {
+        color: #fff;
+        background-color: #333;
+        border: none;
+    }
+
+    .right-clt.contact-directions .btm-border {
+        display: none;
+    }
+
+    .contact-address .right {
+        padding-bottom: 0;
+    }
+
+    .contact-address .right p,
+    .contact-address .right h2 {
+        font-size: 12px;
+    }
+
+    .contact-address {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .contact-address > .inner {
+        min-height: 0;
+    }
+
+    .right-clt.contact-directions {
+        height: auto;
+        margin-left: -15px;
+        padding-left: 30px; /*not sure why neg margin won't work on right*/
+    }
+
+    .right-clt.contact-directions .inner {
+    }
+
+    .right-clt.contact-directions .inner > div {
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+
+    .right-clt.contact-directions .inner p a span {
+        font-size: 12px;
+    }
+
+    .contact-us .tabbed-interface > .pane > .state > .grid > .col-3of4 {
+        margin-bottom: 30px;
+    }
+
+    .right-clt.contact-directions .icon {
+        left: 20px;
+        top: 16px;
+    }
+
+    .right-clt.contact-directions > .inner {
+        padding-left: 35px;
+    }
+
+    .right-clt.contact-directions .inner > div h3 {
+        font-size: 12px;
+    }
+
+    #btn_contact_submit {
+        padding-right: 30px;
+        padding-left: 26px;
+    }
+
+    /*override default typography rules - contact us field labels do NOT shrink font size in mobile (inconsistent with rest of site)*/
+    .contact-us label {
+        font-size: 14px;
+    }
+
+    .contact-us .selectric .label:hover {
+        text-decoration: underline;
+    }
+
+    /* ---- feature slide ---- */
+    .feature-slide .image {
+        visibility: hidden;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .feature-slide .right {
+        padding: 20px 20px 0 20px !important;
+        margin-left: 0 !important;
+    }
+
+    .feature-slide h3 {
+        font-size: 14px !important;
+    }
+
+    .feature-slide span {
+        font-size: 12px !important;
+    }
+
+    .feature-slide .caption {
+        font-size: 12px !important;
+    }
+
+    .feature-slide .image {
+        visibility: hidden;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .feature-slide .right {
+        padding: 20px 20px 0px 20px !important;
+        margin-left: 0 !important;
+    }
+
+    .feature-slide h3 {
+        font-size: 14px !important;
+    }
+
+    .feature-slide span {
+        font-size: 12px !important;
+    }
+
+    /* ---- GBR callout ---- */
+    .gbr-callout {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .gbr-callout .inner {
+        padding-right: 0;
+        margin-right: -10px;
+    }
+
+    .gbr-callout .image img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .gbr-callout .main-link {
+        padding: 11px 20px;
+    }
+
+    .container-with-rail > .grid > .col.right .gbr-callout > .inner {
+        width: auto;
+    }
+
+    .container-with-rail > .grid > .col.right .gbr-callout .image img {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    /* ---- back to top ---- */
+    .back-to-top a.has-arrow-blue-lg-up:after {
+        background-position: 0 -26px;
+        height: 11px;
+        top: 2px;
+    }
+
+    .back-to-top a span {
+        font-size: 12px;
+    }
+
+    /* ---- plus search ---- */
+    .plus-search > .inner {
+        max-width: 100%;
+        padding-bottom: 17px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+    .plus-search h4 {
+        font-size: 12px;
+    }
+
+    .container-with-rail > .grid > .right .plus-search {
+        margin-left: -15px;
+        padding-left: 30px;
+    }
+
+    .container-with-rail > .grid > .right .plus-search > .inner {
+        margin-left: -30px;
+        max-width: 100%;
+    }
+
+    .plus-search > .inner > .logo {
+        display: none;
+        visibility: hidden;
+    }
+
+    /* ---- Accordion type A ---- */
+    .accordion.type-a .handle h3 {
+        font-size: 12px;
+    }
+
+    .accordion.type-a .pane {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .accordion.type-a .pane .caption {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .accordion.type-a .opt-image {
+        /*remove neg margins*/
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* ---- Accordion type B ---- */
+    .accordion.type-b .pane {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .accordion.type-b .always-visible {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .accordion.type-b .always-visible .left .inner {
+        padding-left: 95px;
+        min-height: 95px;
+    }
+
+    .accordion.type-b .always-visible .thumbnail {
+        left: 0;
+    }
+
+    /* ---- Accordion type C "RX Accordion" ---- */
+
+    .accordion.type-c > .inner {
+        max-width: none;
+    }
+
+    .accordion.type-c .handle {
+        background: url(../../../-/media/gwmp/images/ui/rx_accordion_mobile_bkd_taller.png) !important;
+        background-repeat: repeat-x !important;
+        /* you'd think, but no... background-size:cover; */
+        height: auto;
+        border-top: none;
+        min-height: 0;
+    }
+
+    .accordion.type-c .handle.expanded {
+        height: auto;
+        background: #373737!important;
+    }
+
+    .accordion.type-c .handle > .inner {
+        padding: 16px 65px 15px 20px;
+    }
+
+    .accordion.type-c .handle h3 {
+        font-size: 12px;
+        padding-right: 0;
+    }
+
+    .accordion.type-c .handle.expanded h3 {
+        color: #fff;
+    }
+
+    .accordion.type-c > .inner > ul > li:after {
+        display: none;
+    }
+
+    .accordion.type-c .handle .expand-collapse-icon {
+        top: 12px;
+    }
+
+    .accordion.type-c .surprise-image {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .accordion.type-c a.has-popout-icon span:after {
+        right: -19px;
+    }
+
+    .accordion.type-c .pane .caption {
+        padding: 0 0 20px 0;
+    }
+
+    .accordion.type-c .pane .caption > ul,
+    .accordion.type-c .pane .caption > ol {
+        padding-left: 15px;
+        margin-left: 0;
+    }
+
+    .accordion.type-c .pane .caption > ul li {
+        /*LI_EXCEPTION*/
+        padding-bottom: 0;
+    }
+
+    .accordion.type-c .pane .links {
+        padding-left: 0;
+    }
+
+    /*some hackishness for non-standardized use case on RX Products pages*/
+    .accordion.type-c .caption > ol > li > ul {
+        padding-left: 0;
+    }
+
+    /*some hackishness for non-standardized use case on RX Products pages*/
+    .accordion.type-c ul.custom-list.dash {
+        padding-left: 0!important;
+    }
+
+    /* ---- Accordion type D ---- */
+    .accordion.type-d .handle {
+        background-image: url('../../../-/media/gwmp/images/ui/accordionhandle.png') !important;
+        height: auto;
+        background-position: initial;
+        background-repeat: repeat-x;
+        border-top: none;
+    }
+
+    .accordion.type-d .handle h3 {
+        font-size: 12px;
+    }
+
+    .accordion.type-d .handle.big.expanded {
+        height: auto;
+    }
+
+    .accordion.type-d .handle .expand-collapse-icon {
+        top: 8px;
+    }
+
+    .accordion.type-d > .inner > ul > li:after {
+        display: none;
+    }
+
+    .accordion.type-d .pane .caption {
+        padding: 20px 0 0 0;
+    }
+
+    .accordion.type-d .handle.expanded {
+        background: #373737;
+        background-image: none !important;
+    }
+
+    .accordion.type-d .handle.expanded h3 {
+        color: #ffffff;
+    }
+
+    .accordion.type-d .caption p + ul, .accordion.type-d .caption p + p, .accordion.type-d .caption ul + ul, .accordion.type-d .caption ul + p {
+        /*LI_EXCEPTION*/
+        margin-bottom: 8px;
+    }
+
+    /* ---- hero image ---- */
+    .hero-image {
+        padding-right: 20px;
+    }
+
+    .hero-image .hero-image-overlay {
+        left: -20px;
+    }
+
+    .hero-image .hero-image-stripes {
+        bottom: 0;
+    }
+
+    /* ---- Interstitial Popup ---- */
+    .interstitial {
+        top: 5%;
+    }
+
+    .interstitial .window {
+        max-width: 100%;
+        margin: 0 5%;
+    }
+
+    .interstitial .window .inner {
+        padding: 20px 20px 27px 20px;
+    }
+
+    .interstitial .left {
+        width: 100%;
+    }
+
+    .interstitial .right {
+        margin-left: 0;
+    }
+
+    .interstitial .cancel {
+        margin-left: 10px !important;
+        padding-top: 10px;
+    }
+
+    .interstitial .window .btn span {
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    /* ---- plus resources hero ---- */
+
+    .plus-resources-hero:after {
+        display: none;
+    }
+
+    .plus-resources-hero > .inner {
+        position: relative;
+    }
+
+    .plus-resources-hero > .inner > .caption {
+        max-width: none;
+    }
+
+    .plus-resources-hero > .inner > .caption, .plus-resources-hero > .inner > .caption,
+    .plus-resources-hero > .inner > .caption, .plus-resources-hero > .inner > .caption p {
+        font-size: 14px;
+    }
+
+    .plus-resources-hero-features {
+        margin-top: 0;
+    }
+
+    .plus-resources-hero-features > .inner {
+        max-width: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .plus-resources-hero-feature {
+        /*use importants to override higher specificity (to avoid writing a lot of individual rules) */
+        width: 100% !important;
+        float: none !important;
+        margin: 0 !important;
+        border-bottom: none !important;
+        min-height: 200px;
+    }
+
+    .plus-resources-hero-feature > .inner {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .plus-resources-hero-feature > .inner > .icon,
+    .plus-resources-institutional > .icon {
+        float: left;
+        width: 115px;
+        padding-top: 0px;
+        display: block;
+    }
+
+    .plus-resources-hero-feature > .inner > .icon img, .plus-resources-institutional > .icon img {
+        width: 100%;
+        height: auto;
+    }
+
+    .plus-resources-hero-feature > .inner > h3,
+    .plus-resources-institutional > h3 {
+        margin: 16px 0 4px 130px;
+        text-align: left;
+        font-size: 12px;
+        display: block;
+        padding-right: 130px;
+        box-sizing: border-box;
+    }
+
+    .plus-resources-institutional > h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .plus-resources-hero-feature > .inner > .caption,
+    .plus-resources-institutional > .grid {
+        margin-left: 130px;
+        padding-bottom: 0;
+    }
+
+    .plus-resources-institutional > .grid {
+        padding-right: 130px;
+        box-sizing: border-box;
+    }
+
+    .plus-resources-institutional > .caption {
+        margin-left: 130px;
+        padding-bottom: 20px;
+    }
+
+    .plus-resources-institutional > .grid > .col > .inner,
+    .plus-resources-institutional > .grid > .col + .col > .inner,
+    .plus-resources-institutional > .grid > .col + .col + .col > .inner {
+        padding: 0;
+    }
+
+    .plus-resources-institutional > .grid > .col > .inner > .caption {
+        padding-bottom: 0;
+    }
+
+    .plus-resources-hero-feature a.has-arrow-blue-lg, .plus-resources-institutional h3 a {
+        font-size: 12px;
+    }
+
+    .plus-resources-institutional {
+        border-top: 5px solid #eb8700;
+        padding-top: 15px;
+        padding-bottom: 35px;
+    }
+
+    .plus-resources-institutional .divider {
+        display: none;
+    }
+
+    .plus-resources-institutional > .grid > .col > .inner > .links {
+        margin-top: 10px;
+    }
+
+    /* ---- fat callout ---- */
+    .fat-callout > .inner {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .fat-callout .stripe {
+        margin-top: 30px;
+    }
+
+    .fat-callout h3 > a {
+        font-size: 12px;
+    }
+
+    /* ---- content with floated image ---- */
+    .content-with-floated-image h2 {
+        font-size: 15px;
+        margin-bottom: 6px;
+        line-height: 1;
+    }
+
+    .content-with-floated-image img.floated.left {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .content-with-floated-image img.floated.right {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    /* 4/24/2015 additional rendering option for image column width... */
+    .content-with-floated-image.img-35-pct .caption,
+    .content-with-floated-image.img-45-pct .caption {
+        margin-left: 0;
+    }
+    /*2015/07/24 update to fix 35% version (may also need to be done to the 45% version) */
+    .content-with-floated-image.img-35-pct .caption {
+        padding-left: 0;
+    }
+
+
+    /* ---- global center (on contact page - canada) ---- */
+    .global-center {
+        background: #fafafa;
+        padding: 15px;
+    }
+
+    .global-center .left, .global-center .right {
+        float: none;
+        width: 100%;
+    }
+
+    .global-center .continent h2 {
+        font-size: 15px;
+    }
+
+    .global-center .country h2 {
+        font-size: 12px;
+        padding-top: 2px;
+    }
+
+    .global-center .right {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .global-center .right .flag {
+        width: 20px;
+    }
+
+    .global-center .right .info {
+        margin-left: 30px;
+    }
+
+    /* ---- news summary list ---- */
+    .news-summary-list li {
+        border: none;
+    }
+
+    .news-summary-list li + li {
+        padding-top: 0;
+    }
+
+    /* ---- PDF list type B ---- */
+    .pdf-list.type-b .left {
+        text-align: center;
+    }
+
+    .pdf-list.type-b span {
+        font-size: 12px;
+        /*    padding-left: 5px;*/
+    }
+
+    .pdf-list.type-b .left div {
+        font-size: 12px;
+    }
+
+    .pdf-list.type-b .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /*pdf list, type b, inline, when on rail */
+    .rail .pdf-list.type-b.inline .file-size {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 3px;
+    }
+
+    .rail .pdf-list.type-b.inline > .inner > ul > li > .left {
+        width: 80px;
+        text-align: left;
+    }
+
+    /*history-callout*/
+    .history-callout .boldOnlyInMobile {
+        font-weight: bold !important;
+    }
+
+    .history-callout .paddedOnlyInDesktop {
+        padding: 5px 0 0 0;
+    }
+
+    .history-callout .effects {
+        display: none;
+    }
+
+    .history-callout .main-image {
+        border-bottom: none;
+    }
+
+    /*create grey line at bottom*/
+    .history-callout {
+        padding-bottom: 0;
+    }
+
+    .history-callout:after {
+        content: " ";
+        height: 0px;
+        border-top: 1px solid #e2e2e2;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: -15px;
+        padding-right: 30px;
+        display: block;
+    }
+
+    /*fact-sheet*/
+    .fact-sheet {
+        background: none;
+        padding: 0;
+    }
+
+    .fact-sheet > a > img {
+        width: auto;
+    }
+
+    .fact-sheet .button > .btn-v2 {
+        width: auto;
+        box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    }
+
+    .fact-sheet .button > .btn-v2 > a {
+        padding: 8px 30px;
+    }
+
+    .fact-sheet .button > .btn-v2 > a > span {
+        font-size: 12px;
+    }
+
+    .fact-sheet .button > .btn-v2 > a > span:after {
+        top: 2px;
+    }
+
+    /* leadership tabs */
+    .leadership-tabs .sub-headline h2 {
+        font-size: 15px;
+    }
+
+    .leadership-tabs .accordion.type-b .handle h3 {
+        font-size: 12px;
+    }
+
+    .leadership-tabs .accordion.type-b .always-visible {
+        padding-top: 12px;
+    }
+
+    .leadership-tabs .accordion.type-b .always-visible .thumbnail {
+        top: 15px;
+    }
+
+    .leadership-tabs .accordion.type-b .always-visible .left .inner {
+        min-height: 104px;
+    }
+
+    .leadership-tabs .accordion.type-b .always-visible > .grid > .right .icon-link.arrow-blue-med span:after {
+        height: 7px;
+        width: 4px;
+        background-position: 0px -34px;
+        right: -8px;
+        bottom: 3px;
+        background-size: 13px;
+    }
+
+    /* commmittees list (now part of "leadership tabs") */
+    .committees-list > .inner > ul > li > .left, .committees-list > .inner > ul > li > .right, .committees-list > .inner > ul > li > .right > .inner > .left, .committees-list > .inner > ul > li > .right > .inner > .right {
+        float: none;
+        width: auto;
+    }
+
+    .committees-list > .inner > ul > li > .right > .inner > .right {
+        margin-top: 20px;
+    }
+
+    .committees-list > .inner > ul > li {
+        padding: 15px 0 50px 0;
+    }
+
+    .committees-list > .inner > ul > li > .right > .inner > .left > .mobileOnly > .icon {
+        height: 20px;
+        width: 20px;
+        margin: 12px 4px -6px 0;
+        display: inline-block;
+    }
+
+    .committees-list > .inner > ul > li > .right > .inner > .left > .mobileOnly > .file-size {
+        color: #666;
+    }
+
+    .committees-list > .inner > ul > li > .left .members > a, .committees-list > .inner > ul > li > .right > .inner > .right > a > span, .committees-list > .inner > ul > li > .right > .inner > .left > .mobileOnly > .download-text {
+        font-weight: bold;
+    }
+
+    .committees-list > .inner > ul > li > h3, .committees-list > .inner > ul > li > .left .members > h4 {
+        font-size: 12px;
+    }
+
+    .committees-list > .inner > ul > li > h3 {
+        padding: 8px 0 15px 0;
+    }
+
+    /*big link image*/
+    .big-link-image {
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    /*Events List*/
+    .events-list-item {
+        border-bottom: none;
+        padding-top: 0;
+    }
+
+    .events-list-item .left {
+        width: 45px;
+    }
+
+    .events-list-item .right {
+        margin-left: 55px;
+        padding-left: 0;
+    }
+
+    .events-list .no-events-message, .events-list-item h3, .events-list-item .location-date span, .events-list-item .time, .events-list-item .details, .events-list-item .type, .events-list-item .topic, .events-list-item .topic a {
+        font-size: 12px;
+    }
+
+    /*Events List ...um, why is this duplicated? 
+    .events-list-item .left {
+        width: 45px;
+    }
+
+    .events-list-item .right {
+        margin-left: 55px;
+        padding-left: 0;
+    }
+
+    .events-list .no-events-message, .events-list-item h3, .events-list-item .location-date span, .events-list-item .time, .events-list-item .details, .events-list-item .type, .events-list-item .topic, .events-list-item .topic a {
+        font-size: 12px;
+    }*/
+
+    /*events summary*/
+    .events-summary-item h3 {
+        font-size: 12px;
+    }
+
+    /*Public Filings Summary*/
+
+    .public-filings-summary {
+        margin-bottom: 20px;
+    }
+
+    .public-filings-summary > .grid > .left > .left {
+        width: 45px;
+        padding-right: 10px;
+    }
+
+    .public-filings-summary > .grid > .left > .right {
+        margin-left: 55px;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .public-filings-summary > .grid > .right {
+        margin-top: 40px;
+    }
+
+    .public-filings-summary .icons.mobileOnly .icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../../../-/media/gwmp/images/ui/icoformats.png) no-repeat;
+        background-size: 117px 29px;
+    }
+
+    .public-filings-summary .icons.mobileOnly .icon.pdf {
+        background-position: -19px 0;
+    }
+
+    .public-filings-summary .icons.mobileOnly .icon.xlsx {
+        background-position: -58px 0;
+    }
+
+    .public-filings-summary .icons.mobileOnly .icon {
+        margin-right: 5px;
+        margin-bottom: -5px;
+    }
+
+    .public-filings-summary .icons.mobileOnly > div + div {
+        margin-top: 5px;
+    }
+
+    .public-filings-summary .date {
+        margin-top: 2px;
+    }
+
+    .public-filings-summary .rich-text-area {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #e2e2e2;
+    }
+
+    .public-filings-summary .rich-text-area .caption {
+        padding-bottom: 20px;
+    }
+
+    .public-filings-summary .rich-text-area .caption p + p {
+        margin-top: 10px;
+    }
+
+    .public-filings-summary .cta > .right h3 {
+        margin-bottom: 0;
+    }
+
+    .public-filings-summary > .custom-hr {
+        margin-top: 30px;
+    }
+
+    /*public filings list*/
+    .public-filings-list {
+        border-top: 1px solid #e2e2e2;
+    }
+
+    .public-filings-list-item {
+        display: block;
+    }
+
+    .public-filings-list-item > div {
+        display: block;
+    }
+
+    .public-filings-list-item > div.title {
+        width: 100%;
+        padding: 0;
+    }
+
+    .public-filings-list-item > div.title a {
+        font-size: 14px;
+    }
+
+    .public-filings-list-item > div.date.mobileOnly {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .public-filings-list-item > div.formats {
+        width: 100%;
+        padding: 0;
+    }
+
+    .public-filings-list-item > div.formats span {
+        font-size: 14px;
+    }
+
+    .public-filings-list-item .icons.mobileOnly .icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../../../-/media/gwmp/images/ui/icoformats.png) no-repeat;
+        background-size: 117px 29px;
+    }
+
+    .public-filings-list-item .icons.mobileOnly .icon.pdf {
+        background-position: -19px 0;
+    }
+
+    .public-filings-list-item .icons.mobileOnly .icon.xlsx {
+        background-position: -58px 0;
+    }
+
+    .public-filings-list-item .icons.mobileOnly .icon {
+        margin-right: 5px;
+        margin-bottom: -5px;
+    }
+
+    .public-filings-list-item .icons.mobileOnly > div + div {
+        margin-top: 5px;
+    }
+
+    /*investor faq section*/
+    .investor-faq .right .caption {
+        padding: 30px 23px 30px 13px;
+    }
+
+    .investor-faq .left {
+        width: 36px;
+    }
+
+    .investor-faq .letter {
+        font-size: 24px;
+        width: 36px;
+    }
+
+    .investor-faq .question .right .caption, .investor-faq .answer .right .caption,
+    .investor-faq .question .right .caption p, .investor-faq .answer .right .caption p,
+    .investor-faq .answer .right .caption a {
+        font-size: 12px;
+    }
+
+    .investor-faq .arrow {
+        width: 6px;
+        height: 21px;
+        background-size: cover;
+    }
+
+    .investor-faq .center {
+        width: 6px;
+    }
+
+    /*colors reverse in mobile - for some reason*/
+    .investor-faq.green .answer .left {
+        background: url(../../../sitecore/service/notfound.html) bottom repeat-x #00b0dd;
+    }
+
+    .investor-faq.blue .answer .left {
+        background: url(../../../sitecore/service/notfound.html) bottom repeat-x #c3d940;
+    }
+
+    .investor-faq.green .answer .arrow {
+        background-position: 0 -25px;
+    }
+
+    .investor-faq.blue .answer .arrow {
+        background-position: 0 -50px;
+    }
+
+    /*product information page*/
+    .product-information h3 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .product-information .anchor-links {
+        margin-bottom: 30px;
+    }
+
+    /*somewhat hackish - we need to move the rail above main content in this case only, and also make some exceptions to standard rail display rules. (mylan.com rebuild)*/
+    .product-information-page .mobileOnly.prescribing-info .rail {
+        margin-left: 0;
+    }
+
+    .product-information-page .mobileOnly.prescribing-info .rail.grey {
+        background: none;
+        margin-left: 15px;
+    }
+
+    .product-information-page .mobileOnly.prescribing-info .rail.grey > .inner {
+        background: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .product-information-page .mobileOnly.prescribing-info .rail > .inner {
+        margin-right: 0;
+    }
+
+    .product-information-page .mobileOnly.prescribing-info .pdf-list.type-b.inline > .inner > ul > li > .right {
+        margin-left: 45px;
+    }
+
+    .product-information-page .mobileOnly.prescribing-info .rail .pdf-list.type-b.inline > .inner > ul > li > .left {
+        width: 45px;
+    }
+
+    /* ---- STATE / ZIP INPUTS (used on GBR and CONTACT forms, Mylan.com rebuild) */
+    .state-zip {
+        display: block;
+    }
+
+    .state-zip .state,
+    .state-zip .zip {
+        width: 100%;
+        display: block;
+    }
+
+    .state-zip .state {
+        padding-right: 0;
+    }
+
+    .state-zip .zip {
+        padding-left: 0;
+    }
+
+    /*GBR form only - for some reason, it's not a select on the contact form - Mylan.com rebuild*/
+    gbr-form .state-zip .state .labelwrap {
+        padding-bottom: 5px;
+    }
+    /*USA Contact form only - Mylan.com rebuild*/
+    .contact-us.usa .state-zip .state input {
+        margin-bottom: 16px;
+    }
+
+    /*Mylan.com rebuild only - Mobile Subnavigation*/
+    .mobile-subnavigation {
+        width: 100%;
+        background-color: #f0f0f0;
+        margin-bottom: 15px;
+    }
+
+    .mobile-subnavigation > .inner {
+        padding: 20px 15px;
+    }
+
+    .mobile-subnavigation .top-level-link {
+        padding-bottom: 10px;
+    }
+
+    .mobile-subnavigation .top-level-link a {
+        font-size: 14px;
+        font-weight: bold;
+        color: #00bbe7;
+        text-decoration: none;
+    }
+
+    .mobile-subnavigation .top-level-link a:hover {
+        text-decoration: underline;
+    }
+
+    .mobile-subnavigation select {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .pullquote {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .pullquote blockquote {
+        font-size: 12px;
+    }
+
+    .pullquote .attribution {
+        padding-right: 35px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .large-mylan-plus-list .blue-stripes {
+        display: none;
+    }
+
+    /*random fact callout has 20px left padding rather than the standard 15, so we will add 5*/
+    .random-fact-callout .randomFact {
+        padding-left: 5px;
+    }
+
+    /*patient materials list*/
+    .patient-materials-list + .patient-materials-list {
+        border: none;
+    }
+
+    /*Search Results */
+    .search-results-query span {
+        font-size: 18px;
+    }
+
+    .search-results h3, .product-search-results h3, h3.product-search-results {
+        font-size: 12px;
+    }
+
+    .product-search-result {
+        margin-bottom: 30px;
+    }
+
+    .product-search-result .right {
+        margin-left: 120px;
+    }
+
+    .product-search-result .right a {
+        font-size: 15px;
+    }
+
+    .product-search-result .left {
+        max-width: 100px;
+        min-height: 0;
+    }
+
+    /* ---- LARGE MEDIA CALLOUT ---- */
+    .large-media-callout h2 {
+        font-size: 12px;
+    }
+
+    .large-media-callout .media .icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .large-media-callout .media .link {
+        margin-top: 2px;
+    }
+
+    .large-media-callout > .left {
+        max-width: 140px;
+    }
+
+    .large-media-callout > .right {
+        margin-left: 140px;
+    }
+
+    /*4/30/2015 "Inline Callouts" for EMEA Lite Template home pages*/
+    .inline-callouts .image {
+        max-width: 200px;
+    }
+
+    .inline-callouts {
+        margin-left: 40px;
+    }
+
+    .inline-callouts .sub-headline .divider {
+        display: none;
+    }
+
+    .inline-callouts .grid > .col {
+        padding-left: 0;
+    }
+
+    .inline-callouts .caption {
+        padding-bottom: 0;
+    }
+
+    .inline-callouts .sub-headline h2,
+    .inline-callouts .sub-headline h2 a {
+        font-size: 18px;
+    }
+
+    /*9/2/2015 ... 2-column "Contact Us" map module (map on right, text on left)*/
+    .contact-map-module {
+        margin-bottom: 20px;
+    }
+
+    .contact-map-module > .left {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    .contact-map-module > .right {
+        width: 100%;
+        float: none;
+        padding: 20px 0 0 0;
+    }
+
+    /* ============== END INDIVIDUAL COMPONENTS ============== */
+
+    /* =================== BEGIN UTILITY STYLES =================== */
+    .jsHook-mobile {
+        z-index: 1;
+    }
+
+    .mobileOnly {
+        /*"initial" causes issues(?) lets hide it with a min width rule instead.
+		 display: initial;
+		 */
+    }
+
+    .desktopOnly {
+        display: none!important;
+    }
+    /* =================== END UTILITY STYLES =================== */
+
+    /* ======================== BEGIN TEMP HACKS AND SITE-SPECIFIC OVERRIDES ======================== */
+    /* ---- mylan at a glance (unique right hand callout - not componentized - only exists on Canada right now) ---- */
+    .mylan-at-a-glance, .mylan-at-a-glance > .inner {
+        background: white !important;
+    }
+
+    .mylan-at-a-glance .fact-sheet {
+        background: #f2f2f2;
+        margin-left: -5px;
+        margin-right: 5px;
+    }
+
+    .mylan-at-a-glance .fact-sheet > a > img {
+        width: auto;
+    }
+
+    .mylan-at-a-glance .fact-sheet .button {
+        max-width: 128px;
+    }
+
+    .mylan-at-a-glance .inner {
+        padding-top: 0 !important;
+    }
+
+    .mylan-at-a-glance .opt-stripes {
+        display: none !important;
+    }
+    /* ---- END mylan at a glance ---- */
+
+
+
+    /* for unit dose and specialty packaging page - mylan.com */
+    .accordion.type-a .pane > .content-with-floated-image .floated.left {
+        max-width: none;
+    }
+
+    /* RAIL EXCEPTIONS / OVERRIDES */
+    /* this first section is for some odd situations where the subheadline for a rail is above the rail itself (in its own rail, with "no bottom pad") - mylan.com */
+    .rail.no-bottom-pad + .rail > .inner,
+    .rail.no-bottom-pad + .rail.extra-margin > .inner {
+        padding-top: 0;
+    }
+
+    .rail.no-bottom-pad + .rail.grey > .inner,
+    .rail.no-bottom-pad + .rail.grey.extra-margin > .inner {
+        padding-top: 20px;
+    }
+
+    /* unit-dose-and-specialty-packaging rail exceptions - mylan.com*/
+    .container-with-rail .right > .sub-headline.has-divider + .rail.has-stripes > .inner {
+        background: #fff;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /*RX products rail exceptions - mylan.com*/
+    .container-with-rail .right > .rail.no-bottom-pad.no-top-pad > .inner > .sub-headline.has-divider {
+        padding-right: 30px;
+    }
+
+    .container-with-rail .right > .rail.no-bottom-pad.no-top-pad + .rail.flyoff.grey.extra-margin.has-stripes > .inner {
+        background: #fff;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .container-with-rail .right > .rail.no-bottom-pad.no-top-pad + .rail.flyoff.grey.extra-margin.has-stripes + .rail > .inner {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .container-with-rail .right > .rail.no-bottom-pad.no-top-pad + .rail.flyoff.grey.extra-margin.has-stripes + .rail > .inner > .content-section > .caption {
+        padding-right: 15px;
+    }
+
+
+    /*TODO: this class exists in content only, we need to add a component property to distinguish between careers landing page hero, and careers sub page hero (i.e. US careers) - mylan.com */
+    .careers-landing-hero-caption {
+        display: inline;
+        font-size: 15px;
+        padding-right: 0;
+    }
+
+    /*TODO TEMP needed to add a CSS class to content to control image scaling rather than make a whole new component for this one-off - mylan.com */
+    .temp-gbr-form-callout-image-class {
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+    /*hack for unique grey divider on Mylan.com's Investors page, between past events summary and bottom callout
+    (it needs to have the normal padding adjusted and in mobile it needs to go straight to the edge) 
+    (this markup is not componentized - it's in a content section)  - mylan.com*/
+    .custom-hr.grey-line.investors {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 40px;
+    }
+
+    /*hack for pdf list type b inline - only when on rail column - icon alignment changes in mobile  - mylan.com*/
+    .container-with-rail .right > .pdf-list.type-b.inline > .inner > ul > li > .left {
+        text-align: left;
+    }
+
+    /* hack to achieve unique exception to OL styles found on transdermal technology page */
+    /* .transdermal class is applied in content  - mylan.com*/
+    ol.transdermal {
+        padding-left: 5px;
+    }
+
+    /*hack to keep 2 column layout from collapsing into single column (as it normally should) within an accordion on transdermal tech page - mylan.com*/
+    .accordion.type-a .container-two-column .col {
+        width: 50%;
+        float: left;
+    }
+
+    /*Hack for unique (nonstandard) green stripe divider on investors landing page - mylan.com*/
+    .public-filings-summary + .content-section + .custom-hr.green-stripes {
+        max-width: none;
+    }
+
+    /*Exception to normal Page Headline padding: remove top padding if headline is preceded by a carousel*/
+    .carousel + .container-full.padded-content > .page-headline {
+        padding-top: 0;
+    }
+
+    /*ANCHOR PUSH temporary stopgap for adjusting scroll position of anchor tags to compensate for height of header bar. See UI CONTROL JS for proposed global solution (which is commented out pending approval to implement). - mylan.com*/
+    .anchor-push:before {
+        margin-top: 0;
+        height: 1px;
+    }
+
+    /*here's the stand-alone version for componentization... TODO: move this into components section if/when views and controls are ever created for it (right now the class only exists in content on mylan.com) */
+    /* TODO: This is a temp manual component, used on Canada and US and possibly elsewhere. It needs to be componentized. */
+    .reasons-to-move {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 20px;
+    }
+
+    .reasons-to-move h2 {
+        font-size: 12px;
+    }
+
+    .reasons-to-move > .caption {
+        padding-bottom: 20px;
+    }
+
+    .reasons-to-move > .caption ul {
+        /*LI_EXCEPTION*/
+        margin-left: 0;
+    }
+
+    .reasons-to-move > .caption ul li + li {
+        /*LI_EXCEPTION*/
+        margin-top: 6px;
+    }
+
+    .reasons-to-move:after {
+        display: none;
+    }
+
+    /*additional rules and exceptions for "reasons to move" when placed inside an accordion (careers landing page, mylan.com) */
+    .accordion.type-d .reasons-to-move {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .accordion.type-d .reasons-to-move > .caption > ul {
+        padding-left: 0;
+    }
+
+    .accordion.type-d .reasons-to-move > .caption {
+        padding-bottom: 10px!important;
+    }
+
+    /*'Contact global communications cta' (not componentized) - mylan.com "news" landing page*/
+    h2.contact-global-communications-cta {
+        font-size: 12px;
+    }
+
+    /*TEMP - CSS class exists directly in content - mylan.com rebuild only - PDS phase 1 - will become deprecated when new PDS UI is created.*/
+    .product-page-marc-number {
+        padding-bottom: 40px;
+        bottom: -30px;
+    }
+
+    /* 4/24/2015 exception for UL within Content with Floated Image within Accordion (Unit Dose page) */
+    .accordion .content-with-floated-image > .caption > ul {
+        margin-left: 0;
+    }
+}
+
+/* ============= MISC SUPPLEMENTAL =============== */
+@media screen and (max-width: 365px) {
+    .large-media-callout > .right {
+        margin-left: 45%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .plus-resources-hero > .inner > .caption, .plus-res ources-hero > .inner > .caption,
+    .plus-resources-hero > .inner > .caption, .plus-resources-hero > .inner > .caption p {
+        font-size: 12px;
+    }
+}
+
+/* ============= UTILITY =============== */
+@media screen and (min-width: 681px) {
+    .mobileOnly {
+        display: none!important;
+    }
+}

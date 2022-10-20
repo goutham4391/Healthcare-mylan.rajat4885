@@ -1,0 +1,704 @@
+﻿/* ---------------------------------------------------------------------
+ DIGITAS GENERIC ITEMS
+ ------------------------------------------------------------------------ */
+
+.hList > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ir {
+    overflow: hidden;
+    background-color: transparent;
+    color: rgba(255,255,255,0);
+    vertical-align: bottom;
+    text-indent: -9999px;
+    font: 0/0 Arial;
+}
+
+.ico {
+    display: inline-block;
+    background: url('../../../-/media/gwmp/images/ui/icospritesheetx2.png') no-repeat;
+    /*vertical-align: middle;*/
+}
+
+.ico_arrow_large {
+    width: 13px;
+    height: 20px;
+    background-position: -53px 0;
+}
+
+/* ---------------------------------------------------------------------
+ Carousel
+ ------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+ ALL RESOLUTIONS
+ ------------------------------------------------------------------------ */
+
+.carousel {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-slides:before, .carousel-slides:after {
+    content: " ";
+    display: table;
+}
+
+.carousel-slides:after {
+    clear: both;
+}
+
+.js .carousel-slides > li {
+    float: left;
+}
+
+.carousel-img img {
+    display: block;
+    max-width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+
+.carousel-img > a > img {
+    /*CIBER experimental*/
+    width: 100%;
+}
+
+.carousel-text-bd {
+    line-height: 1.2;
+}
+
+.carousel-text-bd em {
+    font-style: italic;
+}
+
+.carousel-text-bd strong {
+    font-style: italic;
+}
+
+.carousel-overlay {
+    width: auto;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 40px;
+    z-index: 1;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.carousel-overlay > img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 200px solid #00BBE6;
+    margin: -343px 0 0 -1092px;
+    border-width: 200px 1000px;
+}
+
+
+/* ---------------------------------------------------------------------
+ DESKTOP
+ ------------------------------------------------------------------------ */
+@media screen and (min-width: 681px) {
+    .isMobile {
+        display: none;
+    }
+
+    .ico_video {
+        width: 76px;
+        height: 75px;
+        margin: -31px 10px 0 0;
+        background-image: url('../../../-/media/gwmp/images/ui/ico_video.png');
+        background-size: auto;
+        vertical-align: top;
+    }
+
+    .carousel {
+        padding-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    /*ciber added - only for subpages  - this is to exactly match the width of sub-carousels on mylan.com 
+    temp commented out until we can decide whether to implement it (since it increases the frequency of the text wrapping issue)
+        .col-3of4 .carousel {
+        padding-right: 60px;
+    } 
+    */
+
+    .carousel_interior {
+        margin: 30px 0 30px -40px;
+    }
+
+    .carousel_interior:first-child {
+        margin: -32px 0 15px -40px; /* first child is top of page carousel */
+    }
+
+    /* cover up left */
+    .carousel-shade, .rotator-shade {
+        content: " ";
+        display: block;
+        width: 400px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        z-index: 601;
+        background: #ffffff;
+    }
+
+    /* Added through JS */
+    .js .carousel-titlePaneWorld {
+        display: block;
+        width: 117px;
+        height: 103px;
+        position: absolute;
+        right: -41px;
+        bottom: -25px;
+        z-index: 6;
+        background-image: url(../../../-/media/gwmp/images/ui/ico_carousel_world.png);
+    }
+
+    .carousel-slides {
+        position: relative;
+    }
+
+    .carousel-slides > li {
+        position: relative;
+    }
+
+    .no-js .carousel-slides > li {
+        margin: 0 0 30px;
+    }
+
+    .carousel-img {
+        min-height: 200px; /* for empty cases */
+    }
+
+    .carousel-content {
+        padding-right: 40px;
+        position: relative;
+    }
+
+    .carousel-text {
+        position: absolute;
+        right: 40px;
+        bottom: 0;
+        left: 0;
+    }
+
+    .carousel-text-hd {
+        height: 50px;
+        padding: 25px 40px 0;
+        background-color: rgba(0,177,221,.85);
+    }
+
+    .carousel-text-hd:before, .carousel-text-hd:after {
+        content: '';
+        display: block;
+        width: 21px;
+        height: 75px;
+        position: absolute;
+        top: 0;
+        z-index: 600;
+        background: transparent url('../../../-/media/gwmp/images/ui/ico_spritesheet_carousel_arrows.png') no-repeat 0 0;
+    }
+
+    .carousel-text-hd:before {
+        left: 0;
+    }
+
+    .carousel-text-hd:after {
+        right: -21px;
+        background-position: -31px 0;
+    }
+
+    .carousel-text-hd > .hdg, .carousel-text-hd > a > .hdg {
+        color: #ffffff;
+    }
+
+    .carousel-text-hd-link {
+        display: inline-block;
+        padding-top: 6px;
+        color: #ffffff;
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    .carousel-text-bd {
+        height: 60px;
+        padding: 15px 40px 0;
+        background-color: rgba(255,255,255,.8);
+        color: #333333;
+        font-size: 20px;
+    }
+
+    .carousel-text-bd p {
+        /*CIBER commented out
+        height: 2.4em;
+        overflow: hidden;
+        */
+    }
+
+    .carousel-text-bd-link {
+        color: inherit;
+    }
+
+    /* Added through JS */
+    .carousel-controls {
+        padding: 10px 70px 0 0;
+        text-align: right;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .carousel-controls_alt {
+        padding-right: 40px;
+        text-align: center;
+    }
+
+    .carousel-controls-arrow {
+        width: 9px;
+        height: 17px;
+        background: transparent url(../../../-/media/gwmp/images/ui/ico_spritesheet_carousel_controls.png) 0 0;
+        cursor: pointer;
+    }
+
+    .carousel-controls-arrow_prev {
+        margin-right: 5px;
+    }
+
+    .carousel-controls-arrow_next {
+        margin-left: 5px;
+        background-position: -58px 0;
+    }
+
+    .carousel-controls-nav > li {
+        display: inline-block;
+    }
+
+    .carousel-controls-nav-item {
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin: 0 5px;
+        background: transparent url(../../../-/media/gwmp/images/ui/ico_spritesheet_carousel_controls.png) -19px 0;
+        vertical-align: middle;
+        line-height: 16px;
+        cursor: pointer;
+    }
+
+    .carousel-controls-nav-item_isActive {
+        width: 13px;
+        height: 18px;
+        margin-bottom: -9px;
+        background-position: -35px 0;
+    }
+
+    .carousel-titlePane {
+        width: 500px;
+        height: 30px;
+        padding: 10px 0 0 10px;
+        overflow: hidden;
+        position: absolute;
+        right: -215px;
+        bottom: 303px;
+        z-index: 3;
+        background-color: #ffffff;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .no-js .carousel-titlePane {
+        display: none;
+    }
+
+    .carousel-titlePane-slides {
+        position: relative;
+    }
+
+    .carousel-titlePane-slides > li {
+        display: inline-block;
+    }
+
+    .carousel-titlePane-slides > li + li {
+        margin-left: 40px;
+    }
+
+    .carousel-titlePane-slides-item {
+        display: inline-block;
+        color: #00b1dd;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: vertical-text;
+    }
+
+    .carousel-titlePane-slides-item_isActive {
+        color: #333333;
+    }
+
+    .carousel-tabs {
+        padding-right: 40px;
+        text-align: right;
+    }
+
+    .no-js .carousel-tabs {
+        display: none;
+    }
+
+    .carousel-tabs > li + li {
+        margin-left: 20px;
+    }
+
+    .carousel-tabs-item {
+        display: block;
+        padding: 8px 5px 5px;
+        color: #00b1dd;
+        cursor: pointer;
+    }
+
+    .carousel-tabs-item_isActive {
+        padding-top: 5px;
+        border-top: solid 3px #fdb813;
+        color: #333333;
+        font-weight: bold;
+    }
+
+    /*CIBER SUPPLEMENTAL to handle case where carousel headline is too long and wraps
+	 (twoline class is appended using JS) */
+    .carousel-text-hd h2 {
+        position: relative;
+        top: -3px;
+    }
+
+    .carousel-text-hd.twoLine h2 {
+        position: relative;
+        top: -18px;
+        line-height: 1;
+    }
+    /* supplemental / experimental tweak */
+    .carousel-tabs.hList.js-carousel-index.isDesktop {
+        margin-top: 10px;
+    }
+
+    a.carousel-text-hd-link.js-modalTrigger {
+        /*on this page (for example) long headlines cause video icon to wrap*/
+        width: 0px;
+        white-space: nowrap;
+    }
+
+    .carousel-text-hd.twoLine {
+        position: relative;
+    }
+
+    .carousel-text-hd.twoLine a.carousel-text-hd-link.js-modalTrigger {
+        /*disabled - we changed the icon to abs position, so the wrapping is no longer an issue
+        display: none;*/
+    }
+    /*end CIBER SUPPLEMENTAL*/
+
+    .pageWrap-inner {
+        padding-left: 4%;
+    }
+
+    /*BEGIN CIBER OVERRIDES*/
+    .pageWrap-inner {
+        padding-left: 0;
+    }
+
+    .home .pageWrap-inner {
+        padding-left: 4%;
+    }
+
+    .carousel {
+        margin-bottom: 0;
+    }
+
+    .home-carousel-module {
+        margin-bottom: 30px;
+    }
+
+    .carousel-titlePane {
+    }
+
+    .carousel-titlePane-slides-item {
+        position: relative;
+        top: -4px;
+    }
+
+    .rotator-items > li, .rotator-tabs > li, .carousel li {
+        padding-left: 0;
+    }
+
+    .rotator-items > li:before, .rotator-tabs > li:before, .carousel li:before {
+        display: none;
+    }
+
+    .carousel-text-hd > .hdg, .carousel-text-hd > a:hover {
+        text-decoration: none;
+    }
+
+    a.carousel-text-hd-link:hover {
+        color: #fff;
+    }
+
+    /* ======== BEGIN ADDED FOR EMEA ======== */
+
+    body.home .carousel {
+        margin-bottom: 20px;
+    }
+
+    body.home .main-wrap > .grid {
+        max-width: 940px;
+    }
+
+    .js body.home .carousel-slides > li {
+        max-width: 920px;
+    }
+
+    .js body.home .carousel-slides > li > .carousel-img > a > img {
+        max-width: 880px;
+    }
+
+    .carousel-text-bd > p > a {
+        color: #333;
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .carousel-text-bd > p > a:hover {
+        text-decoration: none;
+    }
+    /* ======== END ADDED FOR EMEA ======== */
+
+    /*END CIBER OVERRIDES*/
+}
+
+/* ---------------------------------------------------------------------
+ MOBILE
+ ------------------------------------------------------------------------ */
+@media screen and (max-width: 680px) {
+    .ico {
+        background-size: 88px 30px;
+    }
+
+    .isDesktop {
+        display: none;
+    }
+
+    .ico_video {
+        width: 17px;
+        height: 17px;
+        background-position: -71px 0px;
+    }
+
+    .carousel {
+        margin-bottom: 35px;
+        /*CIBER added*/
+        margin-left: -5%;
+        /*CIBER added*/
+        margin-right: 10%;
+    }
+
+    .carousel_interior {
+        margin-left: -15px;
+    }
+
+    .carousel-slides {
+        position: relative;
+        z-index: 2;
+    }
+
+    .carousel-content {
+        padding-right: 20px;
+    }
+
+    .carousel-text {
+        padding: 15px 0 0 20px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .carousel-text-indicator {
+        display: block;
+        padding: 3px 2px;
+        position: absolute;
+        top: 3px;
+        right: 0;
+        border-top: solid 3px #fdb813;
+        color: #333333;
+        font-weight: bold;
+        font-size: 9px;
+    }
+
+    .carousel-text-hd {
+        margin-bottom: 5px;
+    }
+
+    .carousel-text-bd-link {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .carousel-controller {
+        display: block;
+        width: 26px;
+        height: 27px;
+        padding: 8px 0 0 14px;
+        margin-top: -15px;
+        position: absolute;
+        top: 50%;
+        /*ciber changed from 2% to ..*/
+        right: -8%;
+        z-index: 3;
+        border-radius: 3px;
+        background-color: #ffffff;
+    }
+
+    .carousel-hasContentBelow .carousel-controller {
+        margin-top: -48px;
+    }
+
+    .carousel-hasContentBelowAlt .carousel-controller {
+        /*ciber commented out margin-top: -60px;*/
+    }
+
+    .carousel-img {
+        position: relative;
+    }
+
+    .carousel-overlay {
+        right: 0;
+    }
+
+    .carousel-overlay > img {
+        width: 100px;
+        height: 100px;
+        margin: -250px 0 0 -1050px;
+    }
+
+    .carousel-text-bd .play-video-cta {
+        margin-top: 4px;
+    }
+
+    /*custom ciber additions*/
+    .carousel-text-hd-link {
+        position: relative;
+    }
+
+    .carousel-text-hd-link span.ico_video {
+        position: absolute;
+        right: -21px;
+    }
+
+    .carousel-text-hd h2.h1.hdg {
+        font-size: 18px;
+    }
+}
+
+/*ciber overrides*/
+a.carousel-text-hd-link.js-modalTrigger {
+    color: #fff;
+}
+
+.carousel-text-hd a, .carousel-text-hd a:visited, .carousel-text-hd a span, .carousel-text-hd a:visited span {
+    color: #fff;
+}
+
+/*ciber additions*/
+.carousel-left-slide-cover {
+    /*when a local carousel is placed on a subpage, & not at the top of the page, we need to hide the previous slide.*/
+    position: absolute;
+    left: -400px;
+    width: 400px;
+    height: 100%;
+    top: 0;
+    background: white;
+    z-index: 601;
+}
+
+.container-full.padded-content .carousel-left-slide-cover {
+    left: -369px;
+}
+
+/*v1 - with abs positioned play button and play text
+note- play text must always be two lines in this scenario which is not likely to happen... 1 or 3 lines = not vertically centered. 
+.carousel-text-hd {
+	position: relative;
+}
+.carousel-text-hd .carousel-text-hd-link.isDesktop {
+	position: absolute;
+	right: 0px;
+	top: 0;
+	height: 75px;
+	width: 80px;
+	text-align: center;
+	padding-top: 17px;
+}
+.carousel-text-hd .carousel-text-hd-link.isDesktop span {
+	position: absolute;
+	display: block;
+	top: 31px;
+	right: 68px;
+}
+.carousel-text-hd h2.hdg.h1.mix-hdg_inline {
+	padding-right: 115px;
+	display: block;
+}
+
+/*v2 - with abs positioned play button and NO play text. Multilingual-friendly solution. ***** Best recommendation *****/
+.abs-play-btn .carousel-text-hd {
+    position: relative;
+}
+
+.abs-play-btn .carousel-text-hd .carousel-text-hd-link.isDesktop {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 75px;
+    width: 80px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.abs-play-btn .carousel-text-hd .carousel-text-hd-link.isDesktop span {
+    position: absolute;
+    display: block;
+    top: 31px;
+    right: 10px;
+}
+
+.abs-play-btn .carousel-text-hd h2.hdg.h1.mix-hdg_inline {
+    padding-right: 60px;
+    display: block;
+}
+
+/*Due to position of Icon, text MUST be hidden in (v2) */
+.abs-play-btn .carousel-text-hd .carousel-text-hd-link.isDesktop span.play-button-label {
+    display: none;
+}
+
+/*v3 completely destroy the icon and the text 
+.carousel-text-hd .carousel-text-hd-link.isDesktop {display:none;}
+*/
+
+/*v4 destroy just the text
+.carousel .play-button-label {
+display: none;
+} */
+
+/*SUPPLEMENTAL - reduce font size in "gray area" of local carousels
+.carousel-text-bd > p > a{font-size:18px;}*/

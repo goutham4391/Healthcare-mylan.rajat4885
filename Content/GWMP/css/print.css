@@ -1,0 +1,60 @@
+.page-wrap-inner > .main-wrap > .grid {
+    max-width: none;
+}
+
+.page-wrap-inner > .main-wrap > .grid > .col-1of4 {
+    display: none;
+}
+
+.page-wrap-inner > .main-wrap > .grid > .col-3of4 {
+    width: 100%;
+}
+
+.container-full.padded-content, .container-with-rail.padded-content {
+    max-width: none;
+}
+
+.padded-content {
+    padding: 0;
+}
+
+section.header {
+    display: none;
+}
+
+section.global-footer {
+    display: none;
+}
+
+.page-headline {
+    padding-top: 0;
+}
+
+.page-headline h1 {
+    color: #000;
+}
+
+.page-headline .divider {
+    border-top: 4px solid #888;
+}
+
+.page-headline .divider.news {
+    display: none;
+}
+
+.press-release .date {
+    color: #000;
+}
+
+.press-release .print-icon {
+    margin-right: 0;
+}
+
+.press-release .print-icon a span:after {
+    display: none;
+}
+
+.press-release .print-icon a span,
+.press-release .print-icon a:visited span {
+    color: #666;
+}

@@ -1,0 +1,437 @@
+﻿.plus-resources-overview {
+    width: 2800px;
+    padding-left: 4%;
+}
+
+.plus-resources-overview *, .plus-resources-overview *:after, .plus-resources-overview *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box-triple_dashed {
+    background-image: url("../../../-/media/gwmp/images/ui/bluestripes.png");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    /*ciber changed
+    margin-bottom: 50px;*/
+    margin-bottom: 31px;
+
+    padding-bottom: 19px;
+    position: relative;
+    padding-top: 33px;
+    border-top: solid #00b0dd 7px;
+    position: relative;
+}
+
+.plus-resources-overview .box_triple-colHd {
+    width: 30%;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.plus-resources-overview .box_triple-colBd {
+    width: 39%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.plus-resources-overview .box_triple-colFt {
+    width: 22%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.plus-resources-overview .box_triple-bg {
+    height: 438px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 846px;
+    z-index: -1;
+    background: #2cbbdd 0 0 no-repeat;
+}
+
+.plus-resources-overview .box_triple-inner {
+    position: relative;
+    z-index: 2;
+    margin: 0 20px;
+}
+
+
+.plus-resources-overview .mediaList-logo_lg {
+    width: 211px;
+}
+
+.plus-resources-overview .mediaList-logo {
+    margin-bottom: 10px;
+}
+
+.plus-resources-overview .mediaList-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.plus-resources-overview .col img {
+    max-width: 100%;
+}
+
+.plus-resources-overview .altBtn:before {
+    background-image: url("../../../-/media/gwmp/images/ui/btn_left.png");
+    background-repeat: no-repeat;
+    content: "";
+    float: left;
+    height: 48px;
+    margin-left: -10px;
+    padding-right: 5px;
+    width: 10px;
+}
+
+.plus-resources-overview .altBtn {
+    background-image: url("../../../-/media/gwmp/images/ui/btn_right.png");
+    background-position: right 0;
+    display: block;
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 10px;
+    max-width: 485px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.plus-resources-overview .altBtn {
+    font-size: 14px;
+}
+
+.plus-resources-overview .isMobile {
+    display: none;
+}
+
+.plus-resources-overview .link_arrow_alt:after {
+    background-position: 0 -37px;
+    height: 9px;
+    margin-top: -1px;
+    width: 6px;
+}
+
+.plus-resources-overview .link_arrow:after {
+    background-image: url("../../../-/media/gwmp/images/ui/icofootersprite.png");
+    content: "";
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+.plus-resources-overview .link_arrow_inline {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+
+.plus-resources-overview .mediaList-item:before, .plus-resources-overview .mediaList-item:after {
+    content: "";
+    display: table;
+}
+
+.plus-resources-overview .mediaList-item-img_green {
+    border-top: 3px solid #bcd530;
+}
+
+.plus-resources-overview .mediaList-item-img_orange {
+    border-top: 3px solid #fdb813;
+}
+
+.plus-resources-overview .mediaList-item-img_red {
+    border-top: 3px solid #e71b3a;
+}
+
+.plus-resources-overview .mediaList-item-img_darkOrange {
+    border-top: 3px solid #eb8600;
+}
+
+.plus-resources-overview .mediaList-item-img {
+    width: 58px;
+    padding: 20px 0;
+    float: left;
+    text-align: center;
+    margin-right: 9px;
+}
+
+.plus-resources-overview .mediaList-item-bd {
+    padding-top: 20px;
+    border-top: 1px solid #dfdfdf;
+    position: relative;
+    top: 3px;
+    font-size: 14px;
+    font-size: .875rem;
+}
+
+.plus-resources-overview .mediaList-item:after {
+    clear: both;
+}
+
+.plus-resources-overview .mediaList-item:before, .plus-resources-overview .mediaList-item:after {
+    content: "";
+    display: table;
+}
+
+.plus-resources-overview .mediaList-btn {
+    margin-bottom: 15px;
+    max-width: 175px;
+}
+/* 3rd column*/
+
+
+.plus-resources-overview .h2 {
+    font-size: 1.5rem;
+}
+
+.plus-resources-overview .hdg {
+    color: #333;
+    font-weight: bold;
+    line-height: 1.1em;
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+.plus-resources-overview .hdg.h2 {
+    font-size: 24px;
+}
+
+.plus-resources-overview .mod-hd_std, .plus-resources-overview .mod-bd_std, .plus-resources-overview .mod-ft_std {
+    margin: 0 0 12px;
+}
+
+.plus-resources-overview .textMain {
+    margin-bottom: 20px;
+    white-space: normal;
+    line-height: 1.5;
+}
+
+.plus-resources-overview .plusSearch-fieldSet:first-of-type {
+    margin-right: 10px;
+}
+
+.plus-resources-overview .plusSearch-fieldSet {
+    width: 100%;
+    position: relative;
+}
+
+.plus-resources-overview .vList_loose > * {
+    margin-bottom: 12px;
+}
+
+.plus-resources-overview .vList > * {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.plus-resources-overview .isHidden {
+    display: none!important;
+}
+
+.plus-resources-overview .catalogSearch-wrapper {
+    width: auto;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent url(../../../-/media/gwmp/images/ui/roundedinputcap.png) 0 0 no-repeat;
+}
+
+.plus-resources-overview input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration, .plus-resources-overview input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+.plus-resources-overview .ir {
+    text-indent: -9999px;
+}
+
+.plus-resources-overview .catalogSearch-inner {
+    padding-right: 30px;
+    background: transparent url(../../../-/media/gwmp/images/ui/rounded_input_bd.png) right 0 no-repeat;
+}
+
+.plus-resources-overview .catalogSearch[type="search"] {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.plus-resources-overview input[type=search] {
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+
+.plus-resources-overview .catalogSearch {
+    width: 168px;
+    padding: 12px 10px;
+    margin: 0 5px 0 0;
+    border: none;
+    background: transparent;
+    font-size: 13px;
+}
+
+.plus-resources-overview .catalogSearch-btn {
+    width: 20px;
+    height: 20px;
+    margin-top: -9px;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    border: none;
+    background: url(../../../-/media/gwmp/images/ui/icospritesheetx2.png) no-repeat -19px 0;
+    background-size: 88px 30px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.ie8 .plus-resources-overview .catalogSearch-btn {
+    background: url('../../../-/media/gwmp/images/ui/ie8_search_icon.png');
+    background-repeat:no-repeat;
+}
+
+.plus-resources-overview .placeholder-text {
+    color: #888;
+}
+
+
+@media screen and (max-width:960px) {
+    .plus-resources-overview {
+        width: auto;
+    }
+
+    .plus-resources-overview .box_triple-colHd {
+        width: 31.9%;
+    }
+
+    .plus-resources-overview .box_triple-colBd {
+        width: 41.4%;
+    }
+
+    .plus-resources-overview .box_triple-colFt {
+        padding-right: 0;
+        width: 21.2%;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .plus-resources-overview {
+        padding-left: 0;
+    }
+
+    .plus-resources-overview .isMobile {
+        display: block;
+    }
+
+    .plus-resources-overview .catalogSearch-inner .catalogSearch {
+        width: 80%;
+    }
+
+    .plus-resources-overview .catalogSearch-wrapper {
+        width: 100%;
+    }
+
+    .plus-resources-overview .catalogSearch-btn {
+        width: 20px;
+        height: 20px;
+        margin-top: -9px;
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        border: none;
+        background: url(../../../-/media/gwmp/images/ui/icospritesheetx2.png) no-repeat -19px 0;
+        background-size: 88px 30px;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    .plus-resources-overview .box_triple-colHd {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .plus-resources-overview .box_triple-colBd {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .plus-resources-overview .box_triple-colFt {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 15px;
+    }
+
+    .plus-resources-overview .isDesktop {
+        display: none;
+    }
+
+    .plus-resources-overview .mediaList-logo_lg {
+        width: auto;
+    }
+
+    .plus-resources-overview .mediaList-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .plus-resources-overview .box_triple-inner {
+        margin: 0;
+    }
+
+    .plus-resources-overview .box-triple_dashed {
+        padding-left: 20px;
+    }
+
+    .plus-resources-overview .hdg, .plus-resources-overview .hdg.h2 {
+        font-size: 15px;
+    }
+
+    .plus-resources-overview .textMain {
+        font-size: 14px;
+    }
+
+    .plus-resources-overview .mediaList-item-img {
+        margin-right: 25px;
+    }
+
+    .plus-resources-overview .link_arrow_inline {
+        font-size: 12px;
+    }
+
+    .plus-resources-overview .mediaList-btn {
+        max-width: 128px;
+    }
+
+    /*ciber added*/
+    .plus-resources-overview .altBtn {
+        line-height: 46px;
+        padding-right: 11px;
+    }
+}
+
+/*ciber added for PDS autocomplete*/
+.plus-resources-overview .autoComplete {
+    background: #fff;
+    z-index: 4;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    padding: 10px 6px 10px 7px;
+    left: -9px;
+    border-radius: 0 0 5px 5px;
+}
+
+.plus-resources-overview .autoComplete a {
+    display: block;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+/*ciber added to constrain 2x image in mobile*/
+.plus-resources-overview .box_triple-colHd > img {
+  max-width: 170px;
+}
